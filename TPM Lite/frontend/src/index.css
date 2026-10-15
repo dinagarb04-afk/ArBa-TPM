@@ -1,0 +1,45 @@
+:root {
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  color: #23342e;
+  background: #f4f7f5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  --app-canvas: #f4f7f5;
+  --app-ink: #23342e;
+  --app-muted: #66756e;
+  --app-line: #e1e9e3;
+  --app-teal: #168a80;
+  --app-navy: #183443;
+  --app-gold: #d5a449;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible {
+  outline: 3px solid #14877d;
+  outline-offset: 2px;
+}

@@ -1,0 +1,176 @@
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+  background: var(--app-canvas);
+}
+
+.app-sidebar {
+  position: fixed;
+  z-index: 2;
+  inset: 0 auto 0 0;
+  display: flex;
+  width: 238px;
+  flex-direction: column;
+  padding: 26px 17px 18px;
+  background: #183443;
+  color: #e5eef0;
+}
+
+.app-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0 7px 30px;
+  color: #f6fbfa;
+  text-decoration: none;
+}
+
+.app-brand:hover {
+  color: #fff;
+}
+
+.app-brand-mark {
+  display: grid;
+  width: 39px;
+  height: 39px;
+  place-items: center;
+  border: 1px solid #6aa79f;
+  border-radius: 12px;
+  color: #8dd4c8;
+  font-family: Georgia, serif;
+  font-size: 24px;
+}
+
+.app-brand strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+}
+
+.app-brand small {
+  display: block;
+  margin-top: 4px;
+  color: #a6bac1;
+  font-size: 10px;
+}
+
+.app-nav-label {
+  padding: 8px 11px;
+  color: #91a8b1;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.app-navigation {
+  display: grid;
+  gap: 3px;
+}
+
+.app-navigation-link.MuiListItemButton-root {
+  min-height: 40px;
+  padding: 8px 11px;
+  border-radius: 7px;
+  color: #c3d1d5;
+  font-size: 12px;
+}
+
+.app-navigation-link.MuiListItemButton-root:hover {
+  background: #244656;
+  color: #fff;
+}
+
+.app-navigation-link.MuiListItemButton-root.active {
+  background: #244656;
+  box-shadow: inset 3px 0 #67c4b3;
+  color: #fff;
+}
+
+.app-navigation-link .MuiListItemText-primary {
+  font-size: 12px;
+}
+
+.app-sidebar-footer {
+  display: grid;
+  gap: 10px;
+  margin-top: auto;
+  padding: 15px 5px 0;
+  border-top: 1px solid #35515e;
+  color: #a8bac0;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.app-demo-tag {
+  width: fit-content;
+  padding: 4px 6px;
+  border: 1px solid #4c6b77;
+  border-radius: 4px;
+  color: #c1d5d9;
+  font-size: 8px;
+  letter-spacing: 0.08em;
+}
+
+.app-main {
+  width: calc(100% - 238px);
+  min-width: 0;
+  margin-left: 238px;
+}
+
+.app-content.MuiContainer-root {
+  max-width: 1600px;
+  padding: 35px clamp(22px, 4vw, 58px) 58px;
+}
+
+.app-placeholder-card {
+  display: grid;
+  justify-items: start;
+  gap: 18px;
+  padding: 28px;
+}
+
+@media (max-width: 700px) {
+  .app-shell {
+    display: block;
+  }
+
+  .app-sidebar {
+    position: static;
+    display: block;
+    width: 100%;
+    padding: 11px 14px 9px;
+  }
+
+  .app-brand {
+    padding: 0 4px 10px;
+  }
+
+  .app-brand-mark {
+    width: 33px;
+    height: 33px;
+  }
+
+  .app-nav-label,
+  .app-sidebar-footer {
+    display: none;
+  }
+
+  .app-navigation {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .app-navigation-link.MuiListItemButton-root {
+    flex: 0 0 auto;
+  }
+
+  .app-main {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .app-content.MuiContainer-root {
+    padding: 24px 15px 40px;
+  }
+}
